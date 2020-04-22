@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <title>My Website</title>
   </head>
-  <body style="background-color:#fdcb6e">
-    <h1 style="color:#2d3436">My Awesome Website</h1>
-       <p style="color:#2d3436">Check out my awesome website!</p>
+  <!--w3schools / https://www.w3schools.com/cssref/css3_pr_mediaquery.asp-->
+  <style>
+  @media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+  </style>
+  <body style="background-color:#f7f7f7">
+    <h1 style="color:#7EB43D">Universities</h1>
+       <p style="color:#000000">Hi, this is a senior student who needs to decide which school to go for the next 4 years. Here are the schools that I am willing to attend and are considering.</p>
+       <ul>
+    <li>University of California, Berkeley</li>
+    <a href="#berkeley">Jump to Info</a>
+    <li>Purdue University</li>
+    <a href="#purdue">Jump to Info</a>
+    <li>University of California, Davis</li>
+    <a href="#davis">Jump to Info</a>
+  </ul>
+&nbsp;
+<table>
+  <tr>
+  <td style="background-color:#F3B423">Schools</td>
+  <td style="background-color:#F3B423">Choice</td>
+</tr>
+<tr>
+<td>University of California, Berkeley</td>
+<td>1st choice</td>
+</tr>
+<tr>
+<td>Purdue University</td>
+<td>2nd choice</td>
+</tr>
+<tr>
+<td>University of California, Davis</td>
+<td>3rd choice</td>
+</tr>
+</table>
+&nbsp;
+<footer id="berkeley"></footer>
+<h2 style="color:#1940BA"> University of California, Berkeley</h2>
+       <a href="https://www.berkeley.edu">Website</a>
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/UCBerkeleyCampus.jpg/220px-UCBerkeleyCampus.jpg" alt="University of California, Berkeley">
+       <p style="color:#000000">Location: Berkeley, California</p>
+       <p style="color:#000000">Major: Environmental Science</p>
+       <p style="color:#000000">Campus size: Large, Public school</p>
+&nbsp;
+<footer id="purdue"></footer>
+<h2 style="color:#1940BA"> Purdue University</h2>
+       <a href="https://www.purdue.edu">Website</a>
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Purdue_University%2C_West_Lafayette%2C_Indiana%2C_Estados_Unidos%2C_2012-10-15%2C_DD_23.jpg/220px-Purdue_University%2C_West_Lafayette%2C_Indiana%2C_Estados_Unidos%2C_2012-10-15%2C_DD_23.jpg" alt="Purdue University">
+       <p style="color:#000000">Location: West Lafayette, Indiana</p>
+       <p style="color:#000000">Major: Environmental Engineering</p>
+       <p style="color:#000000">Campus size: Large, Public school</p>
+&nbsp;
+<footer id="davis"></footer>
+<h2 style="color:#1940BA"> University of California, Davis</h2>
+       <a href="https://www.ucdavis.edu">Website</a>
+       <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/74/MrakHall_Arboretum.jpg/220px-MrakHall_Arboretum.jpg" alt="University of California, Davis">
+       <p style="color:#000000">Location: Davis, California</p>
+       <p style="color:#000000">Major: Environmental Engineering</p>
+       <p style="color:#000000">Campus size: Large, Public School</p>
   </body>
+  &nbsp;
+<!--Thomas Herbrig, Peter Lappert / https://www.arclab.com/en/kb/htmlcss/display-date-time-javascript-php-ssi.html-->
+<p>Date/Time: <span id="datetime"></span></p>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+</script>
 </html>
